@@ -13,6 +13,10 @@ h1{
     line-height: 60px;
 }
 
+li:hover{
+    background: rgb(217, 217, 217);
+}
+
 input{
     padding: 20px;
     margin: 20px 0px;
@@ -29,13 +33,19 @@ input:focus{
 }
 
 .btn-success{
-    background-color: yellowgreen;
+    background-color: green;
     padding: 20px 20px;
+    color: white;
 }
 
 .btn-wrong{
-    background-color: tomato;
+    background-color: red;
+    color: white;
     padding: 20px 20px;
+}
+
+.disable{
+    display: none;
 }
 
 #username{
@@ -94,6 +104,10 @@ main{
 }
 
 .card-body{
+    margin: 20px 0;
+}
+
+ul{
     margin: 20px 0;
 }
 
