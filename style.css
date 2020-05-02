@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    /* display: inline-block !important; */
+}
+
+h1{
+    font-weight: 300;
+    line-height: 60px;
+}
+
+input{
+    padding: 20px;
+    margin: 20px 0px;
+
+}
+
+input:focus{
+    border: teal 1px solid;
+    }
+
+.btn{
+    padding: 20px 0px;
+    cursor: pointer;
+}
+
+.btn-success{
+    background-color: yellowgreen;
+    padding: 20px 20px;
+}
+
+.btn-wrong{
+    background-color: tomato;
+    padding: 20px 20px;
+}
+
+#username{
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+}
+
+.score{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    background: rgb(217, 217, 217);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+    margin:auto;
+    overflow: hidden;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* position: absolute; */
+}
+
+#home,#q1,#q2,#q3,#q4,#q5, #result{
+    /* margin-top: 100px; */
+    padding: 0px 20px;
+    height: 100vh;
+}
+
+.card-container{
+    background: white;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    border-radius: 20px;
+}
+
+.card-body{
+    margin: 20px 0;
+}
+
+.submitAns{
+    text-align: center;
+    margin: 0px;
+    padding: 10px 40px;
+    background: rgb(217, 217, 217);
+    color: #333;
+}
+
+.submitAns:hover{
+    background: black;
+    color: white;
+}
+
+#result{
+    text-align: center;
+}
+
+.footer-container{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.footer-container > a{
+    margin-right: 5px;
+    padding: 5px 10px;
+    color: white;
+    background-color: black;
+}
+
+.footer-container > a:hover{
+    padding: 5px 10px;
+    color: white;
+    background-color: black;
+}
