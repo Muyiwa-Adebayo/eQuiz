@@ -44,6 +44,11 @@ input:focus{
     padding: 20px 20px;
 }
 
+.btn-wrong:hover{
+    background-color: red;
+    color: white;
+}
+
 .disable{
     display: none;
 }
