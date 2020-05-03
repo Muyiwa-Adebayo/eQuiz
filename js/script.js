@@ -21,14 +21,20 @@ const question5 = document.querySelector('.question5')
 
 let score = 0;
 let mark = 20;
-let result = document.querySelector('.score')
-const message = document.querySelector('.message')
 
+let score1 = document.querySelector('#score1')
+let score2 = document.querySelector('#score2')
+let score3 = document.querySelector('#score3')
+let score4 = document.querySelector('#score4')
+let score5 = document.querySelector('#score5')
+
+let result = document.querySelector('.score')
+// const message = document.querySelector('.message')
 
 question1.firstElementChild.addEventListener('click', ()=>{
     question1.firstElementChild.classList.add('btn-success')
     score+=mark
-    result.innerHTML = `<p class="score">${score}</p>`
+    score1.innerHTML = `<p>scoreboard: <span class="score-board">${score}</span></p>`
     console.log(score)
     const next = document.querySelector('#next1')
     next.classList.remove('disable')
@@ -39,6 +45,7 @@ question1.lastElementChild.addEventListener('click', ()=>{
     question1.firstElementChild.classList.add('btn-success')
     const next = document.querySelector('#next1')
     next.classList.remove('disable')
+    score1.innerHTML = `<p>scoreboard: <span class="score-board">${score}</span></p>`
 })
 
 question1.firstElementChild.nextElementSibling.nextElementSibling.addEventListener('click', ()=>{
@@ -46,12 +53,13 @@ question1.firstElementChild.nextElementSibling.nextElementSibling.addEventListen
     question1.firstElementChild.classList.add('btn-success')
     const next = document.querySelector('#next1')
     next.classList.remove('disable')
+    score1.innerHTML = `<p>scoreboard: <span class="score-board">${score}</span></p>`
 })
 
 question2b.addEventListener('click', ()=>{
     question2b.classList.add('btn-success')
     score+=mark
-    result.innerHTML = `<p class="score">${score}</p>`
+    score2.innerHTML = `<p>scoreboard: <span class="score-board">${score}</span></p>`
     console.log(score)
     const next = document.querySelector('#next2')
     next.classList.remove('disable')
@@ -62,6 +70,7 @@ question2.lastElementChild.addEventListener('click', ()=>{
     question2b.classList.add('btn-success')
     const next = document.querySelector('#next2')
     next.classList.remove('disable')
+    score2.innerHTML = `<p>scoreboard: <span class="score-board">${score}</span></p>`
 })
 
 question2.firstElementChild.addEventListener('click', ()=>{
@@ -69,12 +78,13 @@ question2.firstElementChild.addEventListener('click', ()=>{
     question2b.classList.add('btn-success')
     const next = document.querySelector('#next2')
     next.classList.remove('disable')
+    score2.innerHTML = `<p>scoreboard: <span class="score-board">${score}</span></p>`
 })
 
 question3.firstElementChild.addEventListener('click', ()=>{
     question3.firstElementChild.classList.add('btn-success')
     score+=mark
-    result.innerHTML = `<p class="score">${score}</p>`
+    score3.innerHTML = `<p>scoreboard: <span class="score-board">${score}</span></p>`
     console.log(score)
     const next = document.querySelector('#next3')
     next.classList.remove('disable')
@@ -85,6 +95,7 @@ question3.lastElementChild.addEventListener('click', ()=>{
     question3.firstElementChild.classList.add('btn-success')
     const next = document.querySelector('#next3')
     next.classList.remove('disable')
+    score3.innerHTML = `<p>scoreboard: <span class="score-board">${score}</span></p>`
 })
 
 question3.firstElementChild.nextElementSibling.nextElementSibling.addEventListener('click', ()=>{
@@ -92,6 +103,7 @@ question3.firstElementChild.nextElementSibling.nextElementSibling.addEventListen
     question3.firstElementChild.classList.add('btn-success')
     const next = document.querySelector('#next3')
     next.classList.remove('disable')
+    score3.innerHTML = `<p>scoreboard: <span class="score-board">${score}</span></p>`
 })
 
 question4.lastElementChild.addEventListener('click', ()=>{
@@ -100,7 +112,7 @@ question4.lastElementChild.addEventListener('click', ()=>{
     console.log(score)
     const next = document.querySelector('#next4')
     next.classList.remove('disable')
-    result.innerHTML = `<p class="score">${score}</p>`
+    score4.innerHTML = `<p>scoreboard: <span class="score-board">${score}</span></p>`
 })
 
 question4.firstElementChild.addEventListener('click', ()=>{
@@ -108,6 +120,7 @@ question4.firstElementChild.addEventListener('click', ()=>{
     question4.lastElementChild.classList.add('btn-success')
     const next = document.querySelector('#next4')
     next.classList.remove('disable')
+    score4.innerHTML = `<p>scoreboard: <span class="score-board">${score}</span></p>`
 })
 
 question4.firstElementChild.nextElementSibling.nextElementSibling.addEventListener('click', ()=>{
@@ -115,6 +128,7 @@ question4.firstElementChild.nextElementSibling.nextElementSibling.addEventListen
     question4.lastElementChild.classList.add('btn-success')
     const next = document.querySelector('#next4')
     next.classList.remove('disable')
+    score4.innerHTML = `<p>scoreboard: <span class="score-board">${score}</span></p>`
 })
 
 question5.lastElementChild.addEventListener('click', ()=>{
@@ -123,7 +137,7 @@ question5.lastElementChild.addEventListener('click', ()=>{
     console.log(score)
     const next = document.querySelector('#next5')
     next.classList.remove('disable')
-    result.innerHTML = `<p class="score">${score}</p>`
+    score5.innerHTML = `<p>scoreboard: <span class="score-board">${score}</span></p>`
 })
 
 question5.firstElementChild.addEventListener('click', ()=>{
@@ -131,6 +145,7 @@ question5.firstElementChild.addEventListener('click', ()=>{
     question5.lastElementChild.classList.add('btn-success')
     const next = document.querySelector('#next5')
     next.classList.remove('disable')
+    score5.innerHTML = `<p>scoreboard: <span class="score-board">${score}</span></p>`
 })
 
 question5.firstElementChild.nextElementSibling.nextElementSibling.addEventListener('click', ()=>{
@@ -138,8 +153,11 @@ question5.firstElementChild.nextElementSibling.nextElementSibling.addEventListen
     question5.lastElementChild.classList.add('btn-success')
     const next = document.querySelector('#next5')
     next.classList.remove('disable')
+    score5.innerHTML = `<p>scoreboard: <span class="score-board">${score}</span></p>`
 })
 
+
+result.innerHTML = `<p>${score}</p>`
 // console.log(score)
 
 // console.log(result)

@@ -145,3 +145,8 @@ ul{
     color: white;
     background-color: black;
 }
+
+.score-board{
+    font-size: 2rem;
+    font-weight: 700;
+}
