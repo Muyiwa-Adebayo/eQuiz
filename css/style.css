@@ -59,7 +59,7 @@ input:focus{
     line-height: 2.5rem;
 }
 
-.score{
+#score{
     font-size: 3rem;
     font-weight: 700;
     line-height: 4rem;
