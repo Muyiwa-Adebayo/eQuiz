@@ -39,6 +39,7 @@ question1.firstElementChild.addEventListener('click', ()=>{
     console.log(score)
     const next = document.querySelector('#next1')
     next.classList.remove('disable')
+    question1.style.pointerEvents = 'none';
 })
 
 question1.lastElementChild.addEventListener('click', ()=>{
@@ -47,6 +48,7 @@ question1.lastElementChild.addEventListener('click', ()=>{
     const next = document.querySelector('#next1')
     next.classList.remove('disable')
     score1.innerHTML = `<p>scoreboard: <span class="score-board">0</span></p>`
+    question1.style.pointerEvents = 'none';
 })
 
 question1.firstElementChild.nextElementSibling.nextElementSibling.addEventListener('click', ()=>{
@@ -55,6 +57,7 @@ question1.firstElementChild.nextElementSibling.nextElementSibling.addEventListen
     const next = document.querySelector('#next1')
     next.classList.remove('disable')
     score1.innerHTML = `<p>scoreboard: <span class="score-board">0</span></p>`
+    question1.style.pointerEvents = 'none';
 })
 
 question2b.addEventListener('click', ()=>{
@@ -64,6 +67,7 @@ question2b.addEventListener('click', ()=>{
     console.log(score)
     const next = document.querySelector('#next2')
     next.classList.remove('disable')
+    question2.style.pointerEvents = 'none';
 })
 
 question2.lastElementChild.addEventListener('click', ()=>{
@@ -72,6 +76,7 @@ question2.lastElementChild.addEventListener('click', ()=>{
     const next = document.querySelector('#next2')
     next.classList.remove('disable')
     score2.innerHTML = `<p>scoreboard: <span class="score-board">0</span></p>`
+    question2.style.pointerEvents = 'none';
 })
 
 question2.firstElementChild.addEventListener('click', ()=>{
@@ -80,6 +85,7 @@ question2.firstElementChild.addEventListener('click', ()=>{
     const next = document.querySelector('#next2')
     next.classList.remove('disable')
     score2.innerHTML = `<p>scoreboard: <span class="score-board">0</span></p>`
+    question2.style.pointerEvents = 'none';
 })
 
 question3.firstElementChild.addEventListener('click', ()=>{
@@ -89,6 +95,7 @@ question3.firstElementChild.addEventListener('click', ()=>{
     console.log(score)
     const next = document.querySelector('#next3')
     next.classList.remove('disable')
+    question3.style.pointerEvents = 'none';
 })
 
 question3.lastElementChild.addEventListener('click', ()=>{
@@ -97,6 +104,7 @@ question3.lastElementChild.addEventListener('click', ()=>{
     const next = document.querySelector('#next3')
     next.classList.remove('disable')
     score3.innerHTML = `<p>scoreboard: <span class="score-board">0</span></p>`
+    question3.style.pointerEvents = 'none';
 })
 
 question3.firstElementChild.nextElementSibling.nextElementSibling.addEventListener('click', ()=>{
@@ -105,6 +113,7 @@ question3.firstElementChild.nextElementSibling.nextElementSibling.addEventListen
     const next = document.querySelector('#next3')
     next.classList.remove('disable')
     score3.innerHTML = `<p>scoreboard: <span class="score-board">0</span></p>`
+    question3.style.pointerEvents = 'none';
 })
 
 question4.lastElementChild.addEventListener('click', ()=>{
@@ -114,6 +123,7 @@ question4.lastElementChild.addEventListener('click', ()=>{
     const next = document.querySelector('#next4')
     next.classList.remove('disable')
     score4.innerHTML = `<p>scoreboard: <span class="score-board">20</span></p>`
+    question4.style.pointerEvents = 'none';
 })
 
 question4.firstElementChild.addEventListener('click', ()=>{
@@ -122,6 +132,7 @@ question4.firstElementChild.addEventListener('click', ()=>{
     const next = document.querySelector('#next4')
     next.classList.remove('disable')
     score4.innerHTML = `<p>scoreboard: <span class="score-board">0</span></p>`
+    question4.style.pointerEvents = 'none';
 })
 
 question4.firstElementChild.nextElementSibling.nextElementSibling.addEventListener('click', ()=>{
@@ -130,6 +141,7 @@ question4.firstElementChild.nextElementSibling.nextElementSibling.addEventListen
     const next = document.querySelector('#next4')
     next.classList.remove('disable')
     score4.innerHTML = `<p>scoreboard: <span class="score-board">0</span></p>`
+    question4.style.pointerEvents = 'none';
 })
 
 question5.lastElementChild.addEventListener('click', ()=>{
@@ -140,6 +152,7 @@ question5.lastElementChild.addEventListener('click', ()=>{
     next.classList.remove('disable')
     score5.innerHTML = `<p>scoreboard: <span class="score-board">20</span></p>`
     result.innerHTML = `<p>${score}</p>`
+    question5.style.pointerEvents = 'none';
 })
 
 question5.firstElementChild.addEventListener('click', ()=>{
@@ -149,6 +162,7 @@ question5.firstElementChild.addEventListener('click', ()=>{
     next.classList.remove('disable')
     score5.innerHTML = `<p>scoreboard: <span class="score-board">0</span></p>`
     result.innerHTML = `<p>${score}</p>`
+    question5.style.pointerEvents = 'none';
 })
 
 question5.firstElementChild.nextElementSibling.nextElementSibling.addEventListener('click', ()=>{
@@ -158,6 +172,7 @@ question5.firstElementChild.nextElementSibling.nextElementSibling.addEventListen
     next.classList.remove('disable')
     score5.innerHTML = `<p>scoreboard: <span class="score-board">0</span></p>`
     result.innerHTML = `<p>${score}</p>`
+    question5.style.pointerEvents = 'none';
 })
 
 result.innerHTML = `<p>${score}</p>`
@@ -175,3 +190,5 @@ result.innerHTML = `<p>${score}</p>`
 // }else{
 //     message.textContent = "You scored F! You Failled your generation and you should not be allowed to live!"
 // }
+
+// console.log(question4.style)
